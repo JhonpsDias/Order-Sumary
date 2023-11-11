@@ -1,0 +1,136 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background: url('../img/pattern-background-desktop.svg') center no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-family: var(--font-family);
+}
+
+@media (max-width: 376px) {
+    body {
+        background: url('../img/pattern-background-mobile.svg') center center no-repeat;
+        background-size: cover;
+        background-color: var(--pale-blue);
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .image img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.container .information {
+    padding: 20px;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .information .info h1 {
+    font-weight: 900;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+}
+
+.container .information .info p {
+    font-size: 1.3rem;
+    color: var(--desaturated-blue);
+    margin-bottom: 21px;
+}
+
+.container .plano {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: var(--pale-blue);
+    margin-bottom: 20px;
+}
+
+.container .plano .info-plan::before {
+    content: '';
+    background: url('../img/icon-music.svg') center center no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.container .plano .info-plan {
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.container .plano .info-plan p {
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+}
+
+.container .plano .info-plan span {
+    color: var(--desaturated-blue);
+    font-size: 1.2rem
+}
+
+.container .plano .link-plan a {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(hsl(223, 47%, 23%));
+}
+
+.container .plano .link-plan a:active {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+.container .btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .btn .payment {
+    color: var(--very-pale-blue);
+    font-size: 1.2rem;
+    background-color: var(--brigth-blue);
+    padding: 12px 20px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.container .btn .payment:active {
+    background-color: var(--desaturated-blue);
+}
+
+.container .btn .cancel {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin-bottom: 20px;
+}
+
+.container .btn .cancel:active {
+    color: var(--dark-blue);
+}
