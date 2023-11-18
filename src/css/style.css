@@ -2,6 +2,8 @@ html {
     font-size: 62.5%;
 }
 body {
+    background-size: contain;
+    background-position: center -25%;
     background: url('../img/pattern-background-desktop.svg') center no-repeat;
     background-size: cover;
     background-color: var(--pale-blue);
